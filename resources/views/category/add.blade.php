@@ -2,7 +2,7 @@
 @extends('layouts.admin')
 
 @section('title')
-    <title>Trang chủ</title>
+    <title>Thêm sản phẩm</title>
 @endsection
 
 @section('content')
@@ -31,9 +31,13 @@
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-12">
-                        <h1>Trang chủ admin.</h1>
-                    </div>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Category Name</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter category name">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
                 </div>
                 <!-- /.row -->
             </div><!-- /.container-fluid -->
