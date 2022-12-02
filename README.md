@@ -1,6 +1,8 @@
 ## Các tính năng
 **Admin**
-- [X] Giao diện admin
+- [X
+- 
+- ] Giao diện admin
 - [ ] Login, Logout
 - [ ] Quản lý user và phân quyền
 - [X] CRUD Article/Category/Tag

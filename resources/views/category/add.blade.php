@@ -14,12 +14,12 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1 class="m-0">Kin Vũ Page</h1>
+                        <h1 class="m-0">Add Category Page</h1>
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                             <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Kin Vũ Page</li>
+                            <li class="breadcrumb-item active">Add Category Page</li>
                         </ol>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
@@ -31,10 +31,11 @@
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
-                    <form>
+                    <form action="{{ route('categories.add_category') }}" method="post">
+                        @csrf
                         <div class="form-group">
                             <label for="exampleInputEmail1">Category Name</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter category name">
+                            <input type="text" class="form-control" name="name" placeholder="enter category name">
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
