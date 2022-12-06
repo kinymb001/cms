@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\TagController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,4 +31,12 @@ Route::prefix('category')->name('categories.')
         Route::get('/edit/{id}', [CategoryController::class, 'getEdit'])->name('getEdit');
         Route::post('/edit/{id}', [CategoryController::class, 'postEdit'])->name('postEdit');
         Route::get('/delete/{id}', [CategoryController::class, 'deletedCategory'])->name('deleted');
+    });
+Route::prefix('tag')->name('tags.')
+    ->group(function (){
+        Route::get('/', [TagController::class, 'index'])->name('index');
+        Route::get('/create', [TagController::class, 'create'])->name('form_add');
+        Route::post('/store', [TagController::class, 'post'])->name('add_tag');
+        Route::get('/edit/{id}', [TagController::class, 'getEdit'])->name('getEdit');
+        Route::post('/post/{id}', [TagController::class, 'postEdit'])->name('postEdit');
     });
