@@ -53,4 +53,9 @@ class TagController extends Controller
         $this->tags->edit($dataList);
         return redirect()->route('tags.index');
     }
+    public function deleteTag(Request $req){
+        $id = $req->id;
+        $this->tags->deleteTag($id);
+        return redirect()->route('tags.index');
+    }
 }

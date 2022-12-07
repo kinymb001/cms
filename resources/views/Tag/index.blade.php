@@ -57,7 +57,7 @@
                                         <a href="{{ route('tags.getEdit', ['id'=>$item->id]) }}" class="btn btn-warning btn-sm">Sửa</a>
                                     </td>
                                     <td>
-                                        <a onclick="return confirm('Ban chac chan muon xoa?')" href="#" methods="post" class="btn-block btn-danger btn-sm action_delete">
+                                        <a onclick="return confirm('Ban chac chan muon xoa?')" href="{{ route('tags.delete', ['id'=>$item->id]) }}" methods="post" class="btn-block btn-danger btn-sm action_delete">
                                             Xóa
                                         </a>
                                     </td>

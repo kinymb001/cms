@@ -22,5 +22,7 @@ class Tag extends Model
     public function edit($data){
         DB::update('update tags set name=?, slug=?, updated_at=? where id = ?', $data);
     }
-
+    public function deleteTag($id){
+        DB::delete('delete from tags where id = ?', [$id]);
+    }
 }

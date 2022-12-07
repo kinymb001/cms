@@ -50,6 +50,14 @@
                         </p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="{{ route('posts.index') }}" class="nav-link">
+                        <i class="nav-icon fa fa-clipboard" aria-hidden="true"></i>
+                        <p>
+                            Posts
+                        </p>
+                    </a>
+                </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->
